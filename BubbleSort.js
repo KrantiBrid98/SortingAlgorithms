@@ -1,3 +1,6 @@
+// Time complexity: O(n^2) in the worst and average cases, O(n) in the best case (when the input array is already sorted)
+// Space complexity: O(1)
+// Basic idea: Iterate through the array repeatedly, comparing adjacent pairs of elements and swapping them if they are in the wrong order. Repeat until the array is fully sorted.
 
 let bubbleSwap = (array) => {
     let n = array.length;
