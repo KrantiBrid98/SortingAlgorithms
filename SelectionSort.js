@@ -39,3 +39,7 @@ selectionSort([12,10,13,8,100, 4])
 // swap minimum element with 2
 
 // now array till 2nd position (i.e 0th, 1st and 2nd element of the array is sorted) the array is sorted.. continue the process till n-2
+
+// DISADVANTAGE
+// Relative positioning of the indices are not maintained in selection sorting due to swapping.
+// https://www.youtube.com/watch?v=19YOpMMtLx8
