@@ -1,3 +1,7 @@
+// Time complexity: O(n^2) in the worst and average cases, O(n) in the best case (when the input array is already sorted)
+// Space complexity: O(1)
+// Basic idea: Build up a sorted subarray from left to right by inserting each new element into its correct position in the subarray. Repeat until the array is fully sorted.
+
 const selectionSort = (array) => { // ascending array
     const swap = (i,j) => {
         const temp = array[i];
@@ -27,15 +31,15 @@ selectionSort([12,10,13,8,100, 4])
 
 // Explanation
 // run the loop for 0 to n-1
-// find the minimum element in the array
+// Select the minimum element in the array
 // swap minimum element it with 0
 
 // now array till 0th position, the array is sorted.. Continue the for loop for 1 to n-1
-// find the minimum element in the array from 1 to n-1
+// Select the minimum element in the array from 1 to n-1
 // swap minimum element with 1
 
 // now array till 1st position, the array is sorted.. Continue the for loop for 2 to n-1
-// find the minimum element in the array from 2 to n-1
+// Select the minimum element in the array from 2 to n-1
 // swap minimum element with 2
 
 // now array till 2nd position (i.e 0th, 1st and 2nd element of the array is sorted) the array is sorted.. continue the process till n-2
